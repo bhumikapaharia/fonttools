@@ -56,6 +56,8 @@ jobs:
              source py38-venv/bin/activate && \
              ls && \
              pwd && \
+             pip install -r dev-requirements.txt && \
+             pip install -r requirements.txt && \
              pip install tox && \
              tox -e py-cov && \
              tox -e py-cov-nolxml && \
