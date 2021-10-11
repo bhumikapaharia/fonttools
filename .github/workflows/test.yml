@@ -39,7 +39,7 @@ jobs:
       run: tox -e py-cov-nolxml
 
 
-  armv64_job:
+  arm64_job:
     name: Build and Test for arm64
     runs-on: ubuntu-20.04
     steps:
